@@ -2,7 +2,7 @@
 
 #include "../types.h"
 
-static TMsg *sgpTimedMsgHead;
+STATIC TMsg *sgpTimedMsgHead;
 
 int __fastcall tmsg_get(BYTE *pbMsg, DWORD dwMaxLen)
 {

@@ -8,7 +8,9 @@
 static float pfile_cpp_init_value = INFINITY;
 
 static char hero_names[MAX_CHARACTERS][PLR_NAME_LEN];
+#ifndef NO_GLOBALS
 BOOL gbValidSaveFile;
+#endif
 
 void __cdecl pfile_init_save_directory()
 {

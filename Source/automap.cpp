@@ -3,9 +3,12 @@
 #include "../types.h"
 
 // BUGFIX: only the first 256 elements are ever read
+#ifndef NO_GLOBALS
 USHORT automaptype[512];
-static int MapX;
-static int MapY;
+#endif
+STATIC int MapX;
+STATIC int MapY;
+#ifndef NO_GLOBALS
 BOOL automapflag; // idb
 char AMbyte_4B7E4C[32];
 unsigned char automapview[DMAXX][DMAXY];
@@ -17,6 +20,7 @@ int AutoMapXPos; // weak
 int AutoMapYPos; // weak
 int AMPlayerX; // weak
 int AMPlayerY; // weak
+#endif
 
 // color used to draw the player's arrow
 #define COLOR_PLAYER      (PAL8_ORANGE+1)

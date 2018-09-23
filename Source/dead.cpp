@@ -2,18 +2,20 @@
 
 #include "../types.h"
 
+#ifndef NO_GLOBALS
 // unused, this was probably for blood boil/burn
 int spurtndx; // weak
 
 DeadStruct dead[MAXDEAD];
 int stonendx;
+#endif
 
 void __cdecl InitDead()
 {
 	int i, j;
 	int mtypes[MAXMONSTERS];
 	int idx;
-	
+
 	for ( i = 0; i < MAXMONSTERS; i++ )
 		mtypes[i] = 0;
 

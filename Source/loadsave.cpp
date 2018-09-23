@@ -2,7 +2,9 @@
 
 #include "../types.h"
 
+#ifndef NO_GLOBALS
 unsigned char *tbuff;
+#endif
 
 void __fastcall LoadGame(BOOL firstflag)
 {

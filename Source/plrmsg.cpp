@@ -2,8 +2,10 @@
 
 #include "../types.h"
 
-static unsigned char plr_msg_slot;
+STATIC unsigned char plr_msg_slot;
+#ifndef NO_GLOBALS
 _plrmsg plr_msgs[PMSG_COUNT];
+#endif
 
 const char text_color_from_player_num[MAX_PLRS + 1] = { COL_WHITE, COL_WHITE, COL_WHITE, COL_WHITE, COL_GOLD };
 

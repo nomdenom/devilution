@@ -2161,8 +2161,8 @@ incbin EXE, 0x25EE2, 14
 global d_ILoad:function 60
 d_ILoad:
 incbin EXE, 0x25EF0, 60
-global d_ILoad_2:function 60
-d_ILoad_2:
+global d_WLoad:function 60
+d_WLoad:
 incbin EXE, 0x25F2C, 60
 global d_OLoad:function 23
 d_OLoad:
@@ -2206,8 +2206,8 @@ incbin EXE, 0x26603, 14
 global d_ISave:function 71
 d_ISave:
 incbin EXE, 0x26611, 71
-global d_ISave_2:function 71
-d_ISave_2:
+global d_WSave:function 71
+d_WSave:
 incbin EXE, 0x26658, 71
 global d_OSave:function 24
 d_OSave:

@@ -280,7 +280,7 @@ void sdl_present_surface()
 	surface_dirty = false;
 }
 
-void __cdecl lock_buf_priv()
+void __fastcall j_lock_buf_priv(BYTE idx)
 {
 	const int pitch = 640 + 64 + 64;
 
@@ -295,7 +295,7 @@ void __cdecl lock_buf_priv()
 	}
 }
 
-void __cdecl unlock_buf_priv()
+void __fastcall j_unlock_buf_priv(BYTE idx)
 {
 	gpBufEnd -= (unsigned int)gpBufEnd;
 

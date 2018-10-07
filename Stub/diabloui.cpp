@@ -29,8 +29,8 @@ static BOOL __stdcall ui_add_hero_info(_uiheroinfo *info)
 
 BOOL __stdcall UiSelHeroSingDialog(BOOL(__stdcall *fninfo)(BOOL(__stdcall *fninfofunc)(_uiheroinfo *)),
                                    BOOL(__stdcall *fncreate)(_uiheroinfo *), BOOL(__stdcall *fnremove)(_uiheroinfo *),
-                                   BOOL(__stdcall *fnstats)(int, _uidefaultstats *), int *dlgresult, char *name,
-                                   int *difficulty)
+                                   BOOL(__stdcall *fnstats)(unsigned int, _uidefaultstats *), int *dlgresult,
+                                   char *name, int *difficulty)
 {
 	DUMMY();
 
@@ -101,7 +101,7 @@ int __stdcall UiProgressDialog(HWND window, char *msg, int a3, void *fnfunc, int
 
 BOOL __stdcall UiSelHeroMultDialog(BOOL(__stdcall *fninfo)(BOOL(__stdcall *fninfofunc)(_uiheroinfo *)),
                                    BOOL(__stdcall *fncreate)(_uiheroinfo *), BOOL(__stdcall *fnremove)(_uiheroinfo *),
-                                   BOOL(__stdcall *fnstats)(int, _uidefaultstats *), int *dlgresult, int *a6,
+                                   BOOL(__stdcall *fnstats)(unsigned int, _uidefaultstats *), int *dlgresult, int *a6,
                                    char *name)
 {
 	UNIMPLEMENTED();
